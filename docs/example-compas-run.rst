@@ -13,11 +13,10 @@ where you will find the script ``pythonSubmitDemo.py`` for this demo.
 
 If you haven't yet defined the ``COMPAS_ROOT_DIR`` environment variable, do that now::
 
-    export COMPAS_ROOT_DIR=~/path-to-compas/COMPAS
+    export COMPAS_ROOT_DIR=path-to-compas
 
-where `path-to-compas` should be replaced with the path to the parent directory of the directory in which the COMPAS executable resides.
-Depending upon your system, for the ``export`` command to take effect, it may be necessary to either restart your session or execute the
-following command::
+where `path-to-compas` should be replaced with the path to the parent directory of the COMPAS `src` directory. Depending upon your system,
+for the ``export`` command to take effect, it may be necessary to either restart your session or execute the following command::
 
     source ~/.bashrc
 
