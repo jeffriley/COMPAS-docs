@@ -1,6 +1,8 @@
 Tutorial: simple COMPAS run
 ===========================
 
+This tutorial assumes that you have already built the COMPAS executable as described in :doc:`building-COMPAS`.
+
 For this example you will need the python script ``pythonSubmitDemo.py``, which specifies all the program options (physics assumptions, 
 output types) and runs COMPAS in the terminal. Although the primary functionality of COMPAS is to evolve a whole population of binary 
 stars rapidly, for now, let's focus on evolving a single stellar system and examining the detailed output.
