@@ -4,7 +4,14 @@
    contain the root `toctree` directive.
 
 
+.. raw:: html
 
+    <script type="text/javascript">
+    if (String(window.location).indexOf("readthedocs") !== -1) {
+        window.alert('The documentation has moved. I will redirect you to the new location.');
+        window.location.replace('https://compas.readthedocs.io/en/latest/index.html');
+    }
+    </script>
 
 
 COMPAS
@@ -42,4 +49,3 @@ Licence
 -------
 
 COMPAS is available under the `MIT <https://choosealicense.com/licenses/mit/>`_ licence.
-

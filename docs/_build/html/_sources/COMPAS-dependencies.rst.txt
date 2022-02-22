@@ -9,6 +9,5 @@ COMPAS requires a ``C++`` compiler, and the ``gsl``, ``boost``, and ``hdf5`` lib
 
    COMPAS-dependencies-linux
    COMPAS-dependencies-macOS
-   COMPAS-dependencies-build-compas
    COMPAS-dependencies-python
 

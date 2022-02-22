@@ -34,6 +34,7 @@ short for [-i and -t] - provides an interactive terminal\ [#f2]_.
 
 **-v <path-on-host>:<path-in-container>** |br|
 mount ``<path-on-host>`` to ``<path-in-container>``\ [#f3]_. |br|
+
 This time we not only want to get the output from COMPAS on the host machine, we also want to supply a ``pythonSubmit.py`` to the 
 container from the host machine.
 
@@ -75,6 +76,7 @@ short for [-i and -t] - provides an interactive terminal\ [#f2]_.
 
 **-v <path-on-host>:<path-in-container>** |br|
 mount ``<path-on-host>`` to ``<path-in-container>``\ [#f3]_. |br|
+
 In this instance, make it so `$(pwd)/compas-logs` on my machine is the same as `/app/COMPAS/logs` inside the container.
 
 **teamcompas/compas** |br|
@@ -83,12 +85,11 @@ the image to run.
 **bin/COMPAS** |br|
 the command to run when the container starts.
 
-**--number-of-binaries** |br|
-anything after the given start command is passed to that command. In this case, the flag to set the number of binaries.
+**--number-of-binaries=5** |br|
+the flag to set the number of binaries.
 
-**--outputPath /app/COMPAS/logs** |br|
-as above, anything after the start command is given to that start command. Here it forces logs to go to the directory that is 
-mapped to the host machine.
+**--output-path=/app/COMPAS/logs** |br|
+forces logs to go to the directory that is mapped to the host machine.
 
 
 
@@ -128,7 +129,7 @@ To see the console output of detached containers to check progress, first type::
 
   docker ps
 
-to get the container id of interes, then type::
+to get the container id of interest, then type::
 
     docker logs container_id
 
